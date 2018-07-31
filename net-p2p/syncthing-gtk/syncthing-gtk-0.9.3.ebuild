@@ -1,4 +1,8 @@
+# Copyright 1999-2018 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
 EAPI=5
+
 inherit eutils
 
 DESCRIPTION="GTK3 & python based GUI for Syncthing"
@@ -33,8 +37,7 @@ src_compile() {
 }
 
 src_install() {
-	dodoc README.md LICENSE
+	dodoc README.md
 
 	python2.7 setup.py install --root="${D}" --optimize=1
 }
-

@@ -15,7 +15,7 @@ IUSE="doc"
 DEPEND="
 	doc? ( sys-apps/help2man )
 "
-RDEPEND="${DEPEND}"
+RDEPEND=""
 
 src_compile() {
 	emake DESTDIR="${D}" light

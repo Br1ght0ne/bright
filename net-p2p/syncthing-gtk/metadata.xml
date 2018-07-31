@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>brightone@protonmail.com</email>
+		<name>Oleksii Filonenko</name>
+	</maintainer>
+	<use>
+		<flag name="nautilus">Integrate with gnome-base/nautilus.</flag>
+		<flag name="caja">Integrate with mate-base/caja.</flag>
+	</use>
+</pkgmetadata>

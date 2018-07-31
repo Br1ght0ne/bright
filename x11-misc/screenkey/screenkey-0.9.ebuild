@@ -14,7 +14,7 @@ SRC_URI="${HOMEPAGE}/archive/${PN}-${PV}.tar.gz"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="appindicator"
+IUSE=""
 
 DEPEND="
 dev-python/setuptools[${PYTHON_USEDEP}]
@@ -26,7 +26,6 @@ dev-python/pygtk[${PYTHON_USEDEP}]
 dev-python/pycairo[${PYTHON_USEDEP}]
 x11-misc/slop
 media-fonts/fontawesome
-appindicator? ( dev-libs/libappindicator )
 "
 
 S="${WORKDIR}/${PN}-${PN}-${PV}"

@@ -14,8 +14,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=dev-lang/python-3.4.5-r1"
-RDEPEND="${DEPEND}
+DEPEND=""
+RDEPEND="
 app-admin/stow
 dev-vcs/git
 "

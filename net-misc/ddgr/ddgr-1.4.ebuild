@@ -19,7 +19,6 @@ IUSE="bash-completion fish-completion zsh-completion"
 DEPEND="${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
 
-
 src_prepare(){
 	sed -i "s#/usr/local#/usr#" Makefile
 	default
