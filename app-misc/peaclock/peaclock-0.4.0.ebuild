@@ -15,3 +15,5 @@ DEPEND="
 	>=dev-util/cmake-3.8
 	>=dev-libs/icu-62.1
 "
+
+DOCS="help.txt README.md"
