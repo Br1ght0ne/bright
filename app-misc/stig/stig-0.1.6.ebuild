@@ -1,0 +1,1 @@
+stig-ebuild-common
