@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>brightone@protonmail.com</email>
+		<name>Oleksii Filonenko</name>
+	</maintainer>
+	<longdescription>Application distribution framework</longdescription>
+</pkgmetadata>

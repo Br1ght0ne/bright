@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -16,11 +16,11 @@ RESTRICT="mirror strip bindist"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE="global-menu libsecret qt5"
 
 DEPEND="
-	>=media-libs/libpng-1.2.46
+	>=media-libs/libpng-1.2.46:=
 	>=x11-libs/gtk+-2.24.8-r1:2
 	x11-libs/cairo
 	gnome-base/gconf
@@ -51,7 +51,7 @@ src_install(){
 	pax-mark m vscodium
 	insinto "/opt/${PN}"
 	doins -r *
-	dosym "/opt/${PN}/bin/vscodium" "/usr/bin/${PN}"
+	dosym "bin/vscodium" "/usr/bin/${PN}"
 	make_desktop_entry "${PN}" "VSCodium" "${PN}" "Development;IDE"
 	newicon "resources/app/resources/linux/code.png" ${PN}.png
 	fperms +x "/opt/${PN}/vscodium"
@@ -60,4 +60,3 @@ src_install(){
 	fperms +x "/opt/${PN}/resources/app/node_modules.asar.unpacked/vscode-ripgrep/bin/rg"
 	fperms +x "/opt/${PN}/resources/app/extensions/git/dist/askpass.sh"
 }
-
