@@ -1,1 +1,1 @@
-peaclock.ebuild
+peaclock-ebuild-common
