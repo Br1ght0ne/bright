@@ -19,8 +19,14 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
+CMAKE_USE_DIR="${S}/src"
+
 DEPEND="
 	dev-util/cmake
 "
 
 DOCS="COPYING LICENSE README.md"
+
+src_install() {
+	dolib.so "${BUILD_DIR}/libstderred.so"
+}
