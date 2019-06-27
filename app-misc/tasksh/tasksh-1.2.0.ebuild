@@ -17,14 +17,7 @@ RDEPEND="
 	app-misc/task
 "
 
-src_configure() {
-	mycmakeargs=(
-		-DENABLE_SYNC=$(usex sync)
-		-DTASK_DOCDIR=share/doc/${PF}
-		-DTASK_RCDIR=share/${PN}/rc
-	)
-	cmake-utils_src_configure
-}
+DOCS="AUTHORS ChangeLog COPYING INSTALL NEWS"
 
 src_install() {
 	cmake-utils_src_install
