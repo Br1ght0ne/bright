@@ -5,5 +5,9 @@
 		<email>brightone@protonmail.com</email>
 		<name>Oleksii Filonenko</name>
 	</maintainer>
-	<longdescription>Simple, fast, safe, compiled language for developing maintainable software. Supports translation from C and (soon) C++. Compiles itself in &lt;1s.</longdescription>
+	<longdescription>
+		Simple, fast, safe, compiled language for developing maintainable software.
+		Supports translation from C and (soon) C++.
+		Compiles itself in &lt;1s.
+	</longdescription>
 </pkgmetadata>
