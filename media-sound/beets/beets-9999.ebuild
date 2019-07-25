@@ -13,7 +13,7 @@ HOMEPAGE="http://beets.io/"
 
 SLOT="0"
 LICENSE="MIT"
-IUSE="badfiles chromaprint discogs doc ffmpeg gstreamer icu lastfm mpd replaygain test thumbnail webserver"
+IUSE="badfiles chromaprint discogs doc ffmpeg gstreamer icu lastfm mpd replaygain test thumbnail webserver zsh-completion"
 
 RDEPEND="
 	>=dev-python/jellyfish-0.7.1[${PYTHON_USEDEP}]
@@ -122,4 +122,13 @@ python_test() {
 		rm test_web.py || die "Failed to remove test_web.py"
 	fi
 	"${PYTHON}" testall.py || die "Testsuite failed"
+}
+
+python_install_all() {
+	distutils-r1_python_install_all
+
+	if use zsh-completion; then
+		insinto /usr/share/zsh/site-functions/
+		doins extra/_beet
+	fi
 }
