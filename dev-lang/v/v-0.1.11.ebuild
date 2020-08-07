@@ -13,7 +13,7 @@ else
 	SRC_URI="
 		https://github.com/vlang/v/releases/download/v${PV}/v.zip -> ${P}.zip
 		https://raw.githubusercontent.com/vlang/vc/master/v.c -> v.c"
-	KEYWORDS="~amd64"
+	KEYWORDS="~amd64 ~arm64"
 fi
 
 LICENSE="MIT"
